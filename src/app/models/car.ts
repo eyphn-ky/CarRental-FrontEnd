@@ -1,5 +1,5 @@
 export interface Car{ //export = public 
-    id:number;
+    id:number | null ;
     name:string;
     brandName:string;
     colorName:string;

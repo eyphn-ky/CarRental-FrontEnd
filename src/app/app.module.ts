@@ -10,6 +10,7 @@ import { ColorComponent } from './components/color/color.component';
 import { RentalComponent } from './components/rental/rental.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { NaviComponent } from './components/navi/navi.component';
+import { CarImageComponent } from './components/car-image/car-image.component';
 
 
 @NgModule({//kendi projemizin modülleri burada olur.
@@ -20,7 +21,8 @@ import { NaviComponent } from './components/navi/navi.component';
     ColorComponent,
     RentalComponent,
     CustomerComponent,
-    NaviComponent
+    NaviComponent,
+    CarImageComponent
   ],
   imports: [//dışarıdan eklenen modüller buraya yazılır
     BrowserModule,

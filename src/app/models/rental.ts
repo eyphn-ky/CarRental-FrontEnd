@@ -1,5 +1,5 @@
 export interface Rental{
-    id:number ;
+    id:number | null ;
     customerId:number; 
     carId:number;
     name:string;
