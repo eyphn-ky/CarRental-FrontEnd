@@ -11,6 +11,12 @@ import { RentalComponent } from './components/rental/rental.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { CarImageComponent } from './components/car-image/car-image.component';
+import { VatAddedPipe } from './pipes/vat-added.pipe';
+import { FormsModule } from '@angular/forms';
+import { FilterCarPipe } from './pipes/filter-car.pipe';
+import { FilterWithBrandColorPipe } from './pipes/filter-with-brand-color.pipe';
+import { FilterBrandPipe } from './pipes/filter-brand.pipe';
+import { FilterColorPipe } from './pipes/filter-color.pipe';
 
 
 @NgModule({//kendi projemizin modülleri burada olur.
@@ -22,12 +28,19 @@ import { CarImageComponent } from './components/car-image/car-image.component';
     RentalComponent,
     CustomerComponent,
     NaviComponent,
-    CarImageComponent
+    CarImageComponent,
+    VatAddedPipe,
+    FilterCarPipe,
+    FilterWithBrandColorPipe,
+    FilterBrandPipe,
+    FilterColorPipe
+    
   ],
   imports: [//dışarıdan eklenen modüller buraya yazılır
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

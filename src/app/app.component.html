@@ -1,28 +1,16 @@
 <div class="container">
     <app-navi></app-navi>
-<div class="row">
-    
-    <div class="col-md-2">
-        <app-brand></app-brand>
-    </div>
-    <div class="col-md-8">
-        <router-outlet></router-outlet>
-    </div>
-    <div class="col-md-2">
-        <app-color></app-color>
-    </div>
-    <div class="col-md-12">
-        <app-rental></app-rental>
-    </div>
-  
-    <div class="col-md-6">
-        <app-customer></app-customer>
+
+    <div class="row">
+
+        <div class="col-md-2">
+            <app-brand></app-brand>
+            <div class="col-md-12" style="margin-top:30px;">
+                <app-color></app-color>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>
-
-
-</div>
-
-
-
-

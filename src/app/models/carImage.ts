@@ -3,4 +3,6 @@ export interface CarImage{ //export = public
     carId:number;
     imagePath:string;
     dateTime:Date;
+   
+    
 }

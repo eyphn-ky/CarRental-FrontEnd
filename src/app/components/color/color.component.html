@@ -1,6 +1,10 @@
 <div *ngIf="dataLoaded==false" class="spinner-border text-danger" role="status">
     <span class="visually-hidden">Loading...</span>
 </div>   
+<div class="mb-12">
+    <label for="filterText" class="form-label" style="margin-top:10px"><b>Renk ara : </b></label>
+    <input type="text" [(ngModel)]="filterText" class="form-control" id="filterText" placeholder="giriniz.." style="margin-bottom:20px">
+  </div>
 <ul *ngIf="dataLoaded==true" class="list-group">
     <li 
     routerLink=""
@@ -10,10 +14,12 @@
     <li 
     routerLink="/cars/color/{{color.id}}"
     (click)="setCurrentColor(color)" 
-    *ngFor="let color of colors" 
+    *ngFor="let color of colors | filterColor:filterText" 
     [class]="getCurrentColorClass(color)">
         <div class="row">         
             <div class="col-md-12">{{color.name}}</div>
         </div>
     </li>    
 </ul>
+
+
